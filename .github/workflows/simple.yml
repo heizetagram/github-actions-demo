@@ -1,0 +1,17 @@
+# Navnet på Workflow
+name: Shell Commands
+
+# Event der trigger Workflowet, der kan være et enkelt event eller et array af events
+on: [push]
+
+# Et Workflow kan bestå af 1+ Jobs
+jobs:
+  run-shell-command: # Job objekt, som vi kalder 'run-shell-command'
+    runs-on: ubuntu-latest # Nyt objekt som indeholder options for Jobbet
+    steps:
+      - name: echo a string # Et array af objekter kan angives med '-' foran hvert objekt
+        run: echo "Hello World!"
+      - name: multiline script
+          run: | # Hvis der skal skrives flere kommandoer i shell, skal det noteres med pipe |
+            node -v
+            npm v
