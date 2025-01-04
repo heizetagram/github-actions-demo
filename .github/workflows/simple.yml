@@ -14,4 +14,4 @@ jobs:
       - name: multiline script
         run: | # Hvis der skal skrives flere kommandoer i shell, skal det noteres med pipe |
           node -v
-          npm v
+          npm -v
