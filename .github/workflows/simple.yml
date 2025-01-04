@@ -12,6 +12,6 @@ jobs:
       - name: echo a string # Et array af objekter kan angives med '-' foran hvert objekt
         run: echo "Hello World!"
       - name: multiline script
-          run: | # Hvis der skal skrives flere kommandoer i shell, skal det noteres med pipe |
-            node -v
-            npm v
+        run: | # Hvis der skal skrives flere kommandoer i shell, skal det noteres med pipe |
+          node -v
+          npm v
